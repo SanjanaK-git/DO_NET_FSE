@@ -1,41 +1,20 @@
-using Microsoft.EntityFrameworkCore;
-using Lab4EFCore.Models;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-using var context = new AppDbContext();
-
-// Create Categories
-var electronics = new Category
+namespace Lab4_InsertInitialData.Models
 {
-    Name = "Electronics"
-};
+    public class Product
+    {
+        public int ProductId { get; set; }
 
-var groceries = new Category
-{
-    Name = "Groceries"
-};
+        [Required]
+        public string Name { get; set; }
 
-// Add Categories
-await context.Categories.AddRangeAsync(electronics, groceries);
+        [Column(TypeName = "decimal(18,2)")]
+        public decimal Price { get; set; }
 
-// Create Products
-var product1 = new Product
-{
-    Name = "Laptop",
-    Price = 75000,
-    Category = electronics
-};
+        public int CategoryId { get; set; }
 
-var product2 = new Product
-{
-    Name = "Rice Bag",
-    Price = 1200,
-    Category = groceries
-};
-
-// Add Products
-await context.Products.AddRangeAsync(product1, product2);
-
-// Save to Database
-await context.SaveChangesAsync();
-
-Console.WriteLine("Data inserted successfully.");
+        public Category Category { get; set; }
+    }
+}
