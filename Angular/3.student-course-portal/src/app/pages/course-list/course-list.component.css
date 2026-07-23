@@ -1,0 +1,12 @@
+h2 {
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+}
+
+app-course-card {
+  display: block;
+  margin: 15px;
+}
