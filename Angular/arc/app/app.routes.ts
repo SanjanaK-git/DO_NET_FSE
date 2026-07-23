@@ -1,9 +1,0 @@
-import { Routes } from '@angular/router';
-import { EnrollmentFormComponent } from './pages/enrollment-form/enrollment-form.component';
-
-export const routes: Routes = [
-  {
-    path: '',
-    component: EnrollmentFormComponent
-  }
-];
