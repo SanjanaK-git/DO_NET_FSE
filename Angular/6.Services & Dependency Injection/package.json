@@ -1,1 +1,15 @@
-
+{
+  "name": "student-course-portal",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "ng serve",
+    "build": "ng build"
+  },
+  "dependencies": {
+    "@angular/core": "^20.0.0",
+    "@angular/common": "^20.0.0",
+    "@angular/platform-browser": "^20.0.0",
+    "rxjs": "~7.8.0",
+    "typescript": "~5.8.0"
+  }
+}
