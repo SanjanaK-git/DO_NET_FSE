@@ -1,0 +1,21 @@
+form {
+    width: 400px;
+    margin: auto;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 15px;
+}
+
+small,
+div {
+    color: red;
+}
