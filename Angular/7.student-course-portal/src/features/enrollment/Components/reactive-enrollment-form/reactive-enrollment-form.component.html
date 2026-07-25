@@ -1,0 +1,19 @@
+<h2>Reactive Enrollment Form</h2>
+
+<form [formGroup]="enrollForm" (ngSubmit)="submit()">
+
+  <label>Student Name</label><br>
+  <input type="text" formControlName="studentName">
+
+  <br><br>
+
+  <label>Course Name</label><br>
+  <input type="text" formControlName="courseName">
+
+  <br><br>
+
+  <button type="submit">
+    Submit
+  </button>
+
+</form>
