@@ -1,0 +1,16 @@
+.courses-layout {
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #1976d2;
+  margin-bottom: 20px;
+}
+
+.content {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
