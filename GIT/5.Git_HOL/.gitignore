@@ -1,0 +1,11 @@
+# Ignore backup files
+*.bak
+
+# Ignore log files
+*.log
+
+# Ignore backup folder
+backup/
+
+# Ignore log folder
+logs/
